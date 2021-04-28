@@ -4,22 +4,48 @@
         <title>SITE EM MANUTENÇÃO</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style type="text/css">
-            body { text-align: center; padding: 10%; font: 20px Helvetica, sans-serif; color: #333; }
-            h1 { font-size: 50px; margin: 0; }
-            article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
-            a { color: #dc8100; text-decoration: none; }
-            a:hover { color: #333; text-decoration: none; }
-            @media only screen and (max-width : 480px) {
-                h1 { font-size: 40px; }
-            }
-        </style>
+        <link href="style.css" rel="stylesheet" />
+        
     </head>
     <body>
-        <article>
-            <h1>Site temporariamente indisponível.</h1>
-            <p>Retorne mais tarde.</p>
-            <img class="img-fluid" src="https://http2.mlstatic.com/D_NQ_NP_710555-MLB43595388210_092020-O.jpg" height="500" alt="" />
-        </article>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+              <h3>Plano de saúde</h3>
+              <h4>Entre em contato para mais informações</h4>
+              <fieldset>
+                <label for="idade">Selecione sua idade:  </label>
+
+                <select name="idade" id="idade">
+                  <option value="idade1">0 a 12</option>
+                  <option value="idade2">13 a 18</option>
+                  <option value="idade3">18 a 64</option>
+                  <option value="idade4">65 ou mais</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <div id="down" class="center">
+                    <label for="meses">Selecione a quantidade de meses:  </label>
+            
+                    <select id="length">
+            
+                    </select> 
+                </div>
+              </fieldset>
+              <fieldset>
+                <label for="tipoplano">Selecione o plano:  </label>
+                <select name="tipoplano" id="tipoplano">
+                  <option value="tipoplano1">Bronze</option>
+                  <option value="tipoplano2">Silver</option>
+                  <option value="tipoplano3">Gold</option>
+                  <option value="tipoplano4">Platinum</option>
+                  <option value="tipoplano5">Diamond</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Price" id="price"></textarea>
+              </fieldset>
+            </form>
+          </div>
     </body>
+    <script type="text/javascript" src="file.js"></script>
 </html>
